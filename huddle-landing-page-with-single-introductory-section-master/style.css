@@ -1,0 +1,184 @@
+:root {
+
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+--font-family-open-sans: "Open Sans", sans-serif;
+--font-family-poppins: "Poppins", sans-serif;
+--font-weight-400: 400;
+--font-weight-600: 600;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 top;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80.5%;
+    margin-inline: auto;
+    margin-top: 1.4rem;
+}
+
+.logo {
+    width: 50%;
+    padding: 2rem 2.1rem;
+}
+
+.text-description {
+    text-align: center;
+    margin-top: 3.7rem;
+    color: #fff;
+    font-family: var(--font-family-poppins);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-600);
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color:#fff;
+    color: var(--Violet);
+    padding: .8rem 4rem .8rem;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0,0,0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover, :focus {
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+  }
+
+.icons {
+    margin-top: 4.5rem;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-inline: auto;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.social-link { 
+    color: #fff;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+
+}
+
+.social-link:hover i {
+    color: var(--Soft-Magenta);
+}
+
+.attribution {
+    margin-top: 2rem;
+}
+
+
+@media (min-width: 600px) {
+
+    body {
+      background-image: url(./images/bg-desktop.svg);
+      background-size: cover;
+    }
+
+    main {    
+       flex-direction: row;
+        margin-top: 2.1rem;
+        width: 90%;
+    }
+
+    .logo {
+        padding-top: 4rem ;
+        padding-left: 5rem;
+        width: 25%;
+    }
+
+    .main-photo {
+        flex-basis: 55%;
+        width: 30rem;
+    }
+
+    .text-description {
+        width: 30rem;
+        text-align: left;
+        margin-left: 4rem;
+        margin-top: 3rem;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .footer-icon {
+        margin-top: 1.3rem;
+    }
+
+    .social-list {
+        justify-content: flex-end;
+        padding-right: 4rem;
+    }
+
+    .social-link {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .attribution {
+        font-size: 1.2rem;
+    }
+
+  
+  
+
+}
+  
+
